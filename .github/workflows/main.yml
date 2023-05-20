@@ -13,11 +13,10 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Install packages
       run: |
-        pip install git+https://<your-token>:x-oauth-basic@github.com/Owner/PrivateRepo1.git
-        pip install git+https://<your-token>:x-oauth-basic@github.com/Owner/PrivateRepo2.git
+        pip install git+https://<your-token>:x-oauth-basic@github.com/scollorec/Utils.git
       env:
-        <your-token>: ${{ secrets.SECRET_TOKEN }}
+        <your-token>: ${{ secrets.REPO }}
