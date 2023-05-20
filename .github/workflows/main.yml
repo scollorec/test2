@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: 'env'
 
     steps:
     - name: Checkout code
@@ -21,4 +22,6 @@ jobs:
 
     - name: Run Python script
       run: python script.py
+      env:
+        SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
 
