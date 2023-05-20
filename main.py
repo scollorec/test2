@@ -11,7 +11,7 @@ def print_hi(name):
 if __name__ == '__main__':
     test.test()
 
-    # my_json = slack = os.environ['GOOGLE_API_KEY']
-    # test.stringify(my_json)
+    #my_json = slack = os.environ['GOOGLE_API_KEY']
+    #test.stringify('google_api_key.json')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
