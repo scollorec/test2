@@ -15,6 +15,7 @@ with open('output_file.json', 'w') as f:
 os.environ["GOOGLE_API_KEY"] = 'output_file.json'
 """
 
+print(f"api_key_json: {os.environ['GOOGLE_API_KEY']}")
 
 test.test()
 
