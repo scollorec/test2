@@ -1,0 +1,23 @@
+name: Install packages from private repo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install packages
+      run: |
+        pip install git+https://<your-token>:x-oauth-basic@github.com/Owner/PrivateRepo1.git
+        pip install git+https://<your-token>:x-oauth-basic@github.com/Owner/PrivateRepo2.git
+      env:
+        <your-token>: ${{ secrets.SECRET_TOKEN }}
