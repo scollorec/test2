@@ -43,8 +43,8 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="GOOGLE_API_KEY" value="google_api_key.json" />
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="GOOGLE_API_KEY" value="google_api_key.json" />
         <env name="SLACK_CHANNEL" value="T057P56FBV1/B058D09UJD6/KaKi8Qhqe98Wm1mxZi6Ntvmm" />
         <env name="SQLITE_FILE_ID" value="12BVf9DCzZAp6vivIHOJqm_4Gz0lMo98D" />
       </envs>

@@ -9,7 +9,6 @@ def test():
     webhook_url = "https://hooks.slack.com/services/" + slack
     channel = "#developement"  # Replace with the desired channel name or ID
     message = "Project test"
-
     result = db.test_database()
 
     # Initialize an empty list to hold the strings
