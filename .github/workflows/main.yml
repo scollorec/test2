@@ -16,8 +16,6 @@ jobs:
         python-version: '3.11'
 
     - name: Install packages
-      env:
-        <your-token>: ${{ secrets.REPO }}
       run: |
-        pip install git+https://<your-token>:x-oauth-basic@github.com/scollorec/Utils.git
+        pip install git+https://${{ secrets.REPO }}:x-oauth-basic@github.com/scollorec/Utils.git
 
