@@ -24,4 +24,6 @@ jobs:
       run: python script.py
       env:
         SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        SQLITE_FILE_ID: ${{ secrets.SQLITE_FILE_ID }}
 
