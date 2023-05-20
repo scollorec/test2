@@ -5,23 +5,25 @@ import json
 
 
 def test():
-    slack = os.environ['SLACK_CHANNEL']
-    webhook_url = "https://hooks.slack.com/services/" + slack
-    channel = "#developement"  # Replace with the desired channel name or ID
-    message = "Project test"
-    result = db.test_database()
+    try:
+        slack = os.environ['SLACK_CHANNEL']
+        webhook_url = "https://hooks.slack.com/services/" + slack
+        channel = "#developement"  # Replace with the desired channel name or ID
+        message = "Project test"
+        result = db.test_database()
 
-    # Initialize an empty list to hold the strings
-    strings = []
+        # Initialize an empty list to hold the strings
+        strings = []
 
-    # Loop over the tuples in the list
-    for my_tuple in result:
-        # Convert the tuple to a string and append it to the list
-        strings.append(str(my_tuple))
+        # Loop over the tuples in the list
+        for my_tuple in result:
+            # Convert the tuple to a string and append it to the list
+            strings.append(str(my_tuple))
 
-    for message in strings:
-        comms.send_slack_message(webhook_url, channel, message)
-
+        for message in strings:
+            comms.send_slack_message(webhook_url, channel, message)
+    except Exception as e:
+        print(f"Error: {e}")
 
 
 def stringify(my_json):
