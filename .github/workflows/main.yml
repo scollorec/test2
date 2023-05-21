@@ -1,6 +1,6 @@
 name: Install packages from private repo
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
@@ -26,4 +26,10 @@ jobs:
         SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         SQLITE_FILE_ID: ${{ secrets.SQLITE_FILE_ID }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        DATABASE_PORT: ${{ secrets.DATABASE_PORT }}
+        DATABASE_USER: ${{ secrets.DATABASE_USER }}
+        DATABASE_PWD: ${{ secrets.DATABASE_PWD }}
+
+
 

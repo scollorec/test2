@@ -9,8 +9,8 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print("ICI")
-    test.test()
+    #test.test()
+    test.data_maintenance()
 
     #my_json = slack = os.environ['GOOGLE_API_KEY']
     #test.stringify('google_api_key.json')

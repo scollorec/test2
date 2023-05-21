@@ -24,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/Stephan/Documents/GitHub/test&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
@@ -44,7 +45,11 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="GOOGLE_API_KEY" value="google_api_key.json" />
+        <env name="DATABASE_PORT" value="3306" />
+        <env name="DATABASE_PWD" value="&lt;Eugena8$Eugena8$&gt;" />
+        <env name="DATABASE_URL" value="ec2-13-53-243-179.eu-north-1.compute.amazonaws.com" />
+        <env name="DATABASE_USER" value="&lt;python&gt;" />
+        <env name="GOOGLE_API_KEY" value="{&quot;type&quot;: &quot;service_account&quot;, &quot;project_id&quot;: &quot;python-384012&quot;, &quot;private_key_id&quot;: &quot;8cafde8c52d8e096f8bf6950dd8babf462183507&quot;, &quot;private_key&quot;: &quot;-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTGPMqQvdcCyRw\nGE5vd4ikYvXaJ7w3tklz/1yV/B3CPlpmnuDI1hHLfbdPl3JQrvgT8S7cyUvW67Gh\nBDD2qrcJ5jhK7cmP35Kg52/bzj/aPl5dVsexqfZZOQOQmHw5jPzMWp7uNrU7d/ce\nsQZgwLXZ/ZwWG5eMax9kkf2KgbyYMkPgRe9wBYF33L4in5mDVUsjsJP1wT1/4Ss9\nk+oOYdzKbbdmZ1UDetXpmHS89V+cICyAJyb/jmtufZrKuYjvmySn3MTDyvSSbsKe\nBIHYYmb6d37H24vrmh/ykbO1F7kv8IXlk+Jr9aV+/cmaT0EJjNH3/mLWTO0sww+3\nBGdmlaEXAgMBAAECggEAWJQjlRw8h5b1V0QbxZI2+CO+XihGRmprMA17YERGiHd5\nn44TbLLHDMhX30IBafHBjzypGWQuOqT0CEil8xt3auP7wxU8eu6prHLw8R7+lCmP\nl0MO0HItOQs/f7E8jzml6mosPnEeYzHXtD08G+VBaZONp4k0cmuQ5LaN2UzPQl0x\n/9jjRVlSPEM71JfnyMA20xQQJX7UlcXE0ILxqvDWBPAdZhiKGr2zRBMO0GuBXhDP\nYE6WwA3SmQ8mR07gg0bb2OgtIQn2VKqJqUCv1oFblG8fCwOuCD8kYsw7nrdwPwXC\nXDP6mxj0+R2YwlCkvZt1e3bZBCChCNlB8zy89lxngQKBgQDwsnu3yQdZAQafxN7i\nfds9DNQszIWqAr4+Bc9gFJ3NynkJjYqkldpXt5aTQSzyz7VJx8Dp1BwgeYQuVMSa\nNsRfZQ18PhHWn/rmnZIIoBXeX2yHoCVOLvZ54tKj/FVxPs50+CWVprwnRn5VFkS9\nztMZ4U5hwYRpMh+x7avZ4uQJ8QKBgQDghLW+37xKcj4ecTrYwF243KI1sli2fEIR\nw0HkvYgGTqdRQcauPOxvuyobPfLuqhC5FGRiyoPOcu281Ml6tfC7gdnD1n9LdnKI\n0VJBACKpGKc2zzaCvI3I+J3mBtoySOFpMlVmXEJkUncFs4EehXT9Px+FzRaD0PyP\nAiTBUY+ThwKBgDq58YGX5NkMbQdSS2dLedBdbu83P22Jmc0cMcqpfQ8W1Y1FIYyi\nm1FHk8992W+syfikaici/3HU9DExsX5G2obD6xRjOIr7IYZe76B3Hp7Q/XPh2PhI\ncQ6wDuC/0kD9J/ZWDSWENugGRRCRjFgbPFpWJH+pbZsVBbKt4H4a47ShAoGBAM72\nBoMYwvztKo3tWo2LZdmOqIhPCq/NAypUj11HySfnQR0KQRdEWb71DO9nv5R5eEjj\nn1Xh0HZyQuwaSk+vf2WZYR/Bjj4FxbaRHf2FHm45p4pCoMELBrgHVaZBEsnfnMnX\n+BkPWrQXwFelDJUR+LGpimlQkDyaXPWGyFLb2DnpAoGBAMPqcmGg9WkkXcK83nwy\n6H9vPYOKb6cVWxMjQyeBqOWcdpvOqFFbsUunixLaCoxg0B0j1QQz4bWotbMgQLFt\n4H6XdX6PnuH10WNi7iu3Soi+SqT6OX+1xkLfm1qGpvkW1Z00+O8KGp+fO99POiFI\nKk0IaioKhtzYHzAz9uw6sgaN\n-----END PRIVATE KEY-----\n&quot;, &quot;client_email&quot;: &quot;python@python-384012.iam.gserviceaccount.com&quot;, &quot;client_id&quot;: &quot;102086544303939058561&quot;, &quot;auth_uri&quot;: &quot;https://accounts.google.com/o/oauth2/auth&quot;, &quot;token_uri&quot;: &quot;https://oauth2.googleapis.com/token&quot;, &quot;auth_provider_x509_cert_url&quot;: &quot;https://www.googleapis.com/oauth2/v1/certs&quot;, &quot;client_x509_cert_url&quot;: &quot;https://www.googleapis.com/robot/v1/metadata/x509/python%40python-384012.iam.gserviceaccount.com&quot;}" />
         <env name="SLACK_CHANNEL" value="T057P56FBV1/B058D09UJD6/KaKi8Qhqe98Wm1mxZi6Ntvmm" />
         <env name="SQLITE_FILE_ID" value="12BVf9DCzZAp6vivIHOJqm_4Gz0lMo98D" />
       </envs>

@@ -1,7 +1,11 @@
+import traceback
+
 import Utils.communications as comms
 import Utils.Database as db
 import os
 import json
+import Stockdata.StockProcess as sp
+import Utils.communications as comms
 
 
 def test():
@@ -10,20 +14,11 @@ def test():
         webhook_url = "https://hooks.slack.com/services/" + slack
         channel = "#developement"  # Replace with the desired channel name or ID
         message = "Project test"
-        result = db.test_database()
 
-        # Initialize an empty list to hold the strings
-        strings = []
-
-        # Loop over the tuples in the list
-        for my_tuple in result:
-            # Convert the tuple to a string and append it to the list
-            strings.append(str(my_tuple))
-
-        for message in strings:
-            comms.send_slack_message(webhook_url, channel, message)
+        sp.maintain_stocks_data()
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error: test: {e}")
+        traceback.print_exc()
 
 
 def stringify(my_json):
@@ -31,3 +26,17 @@ def stringify(my_json):
         my_json = json.load(f)
     my_json_string = json.dumps(my_json)
     print(my_json_string)
+
+
+def data_maintenance():
+    try:
+        sp.maintain_stocks_data(10)
+
+        slack = os.environ['SLACK_CHANNEL']
+        webhook_url = "https://hooks.slack.com/services/" + slack
+        channel = "#developement"  # Replace with the desired channel name or ID
+        message = "Data maintenance executed successfully"
+        comms.send_slack_message(webhook_url, channel, message)
+    except Exception as e:
+        print(f"Error: test: {e}")
+        traceback.print_exc()
