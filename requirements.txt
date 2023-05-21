@@ -35,11 +35,9 @@ requests==2.30.0
 rsa==4.9
 six==1.16.0
 soupsieve==2.4.1
-Stockdata @ git+https://github.com/scollorec/Stockdata.git@65dd8dbf2b3b26373b2410a02c48a391c57d5618
 tzdata==2023.3
 uritemplate==4.1.1
 urllib3==1.26.15
-Utils @ git+https://github.com/scollorec/Utils.git@9db77b3a5dc69469bbafa5ad63f4540eb8eef8e2
 wcwidth==0.2.6
 webencodings==0.5.1
 yfinance==0.2.18
