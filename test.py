@@ -30,7 +30,7 @@ def stringify(my_json):
 
 def data_maintenance():
     try:
-        sp.maintain_stocks_data(20)
+        sp.maintain_stocks_data(50)
         message = "Data maintenance executed successfully"
     except Exception as e:
         print(f"Error data_maintenance: {e}")
