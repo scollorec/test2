@@ -30,13 +30,18 @@ def stringify(my_json):
 
 def data_maintenance():
     try:
-        sp.maintain_stocks_data(10)
+        sp.maintain_stocks_data(20)
+        message = "Data maintenance executed successfully"
+    except Exception as e:
+        print(f"Error data_maintenance: {e}")
+        traceback.print_exc()
+        message = "Problem with Data maintenance"
 
+    try:
         slack = os.environ['SLACK_CHANNEL']
         webhook_url = "https://hooks.slack.com/services/" + slack
         channel = "#developement"  # Replace with the desired channel name or ID
-        message = "Data maintenance executed successfully"
         comms.send_slack_message(webhook_url, channel, message)
     except Exception as e:
-        print(f"Error: test: {e}")
+        print(f"Error sending Slack message:{e}")
         traceback.print_exc()
