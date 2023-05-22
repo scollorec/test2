@@ -4,8 +4,11 @@ name: Data maintenance
 
 on:
   schedule:
-    - cron:  '*/30 * * * *'
+    - cron:  '0 13 * * *'
       # cron:  '*/30 * * * *'
+      # cron thqt runs every dqy at 1pm
+        # cron:  '0 13 * * *'
+
 
 
 jobs:
