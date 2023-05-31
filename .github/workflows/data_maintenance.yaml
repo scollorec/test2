@@ -4,7 +4,7 @@ name: Data maintenance
 
 on:
   schedule:
-    - cron:  '*/60 * * * *'
+    - cron:  '*/60 * * * 3'
       # cron:  '*/30 * * * *'
       # cron that runs once a week; Saturday at 13:00
         # cron:  '0 13 * * 6'
